@@ -1,13 +1,11 @@
-g = int(input('введите натуральное число'))
-v = int(input('введите натуральное число'))
-n = int(input('введите натуральное число'))
-if n==v==g:
-    print(3)
-elif n!=v!=g:
-    print(0)
-elif g==n and g!=v and n!=v:
-    print(2)
-elif g==v and g!=n and v!=n:
-    print(2)
-elif v==n and v!=g and n!=g:
-    print(2)
+x1 = int(input('введите номер столбца для первой клетки'))
+x2 = int(input('введите номер строки для первой клетки'))
+y1 = int(input('введите номер столбца для второй клетки'))
+y2 = int(input('введите номер строки для второй клетки'))
+if x1+1==y1 or x1-1==y1 or x1==y1:
+    if x2+1==y2 or x2-1==y2 or x2==y2:
+        print ('yes')
+    else:
+        print('no')
+else:
+    print ('no')
